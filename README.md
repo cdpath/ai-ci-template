@@ -7,13 +7,13 @@ This repository demonstrates how to use GitHub Models API in GitHub Actions work
 ## Usage
 
 1. Fork this repository
-2. Edit `.github/scripts/config.json` to customize the AI prompt
+2. Edit [config.json](.github/scripts/config.json) to customize the AI prompt
 3. Add a markdown file to the repository
 4. The AI will automatically process it and create a `_processed.md` file
 
 ## Configuration
 
-Edit the `system_prompt` in `config.json`:
+Edit the `system_prompt` in [config.json](.github/scripts/config.json):
 
 ```json
 {

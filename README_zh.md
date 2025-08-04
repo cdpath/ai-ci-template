@@ -7,13 +7,13 @@
 ## 使用方法
 
 1. Fork 此仓库
-2. 编辑 `.github/scripts/config.json` 自定义 AI 提示词
+2. 编辑 [config.json](.github/scripts/config.json) 自定义 AI 提示词
 3. 向仓库添加 markdown 文件
 4. AI 会自动处理并创建 `_processed.md` 文件
 
 ## 配置
 
-编辑 `config.json` 中的 `system_prompt`：
+编辑 [config.json](.github/scripts/config.json) 中的 `system_prompt`：
 
 ```json
 {
