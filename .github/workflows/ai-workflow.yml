@@ -27,7 +27,6 @@ jobs:
         files: '**/*.md'
         files_ignore: '**/*_processed.md'
         separator: 'newline'
-        since_last_remote_commit: true
 
     - name: Set up Python
       uses: actions/setup-python@v4
