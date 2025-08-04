@@ -8,8 +8,8 @@
 
 1. Fork 此仓库
 2. 编辑 [config.json](.github/scripts/config.json) 自定义 AI 提示词
-3. 向仓库添加 markdown 文件
-4. AI 会自动处理并创建 `_processed.md` 文件
+3. 向 `markdowns/` 目录添加 markdown 文件
+4. AI 会自动处理并在同一目录下创建 `_processed.md` 文件
 
 ## 配置
 

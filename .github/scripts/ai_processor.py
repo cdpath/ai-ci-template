@@ -16,14 +16,10 @@ def load_config():
         return json.load(f)
 
 def get_changed_files():
-    """Get list of changed files from environment, fallback to all markdown files"""
+    """Get list of changed files from environment"""
     files_str = os.environ.get('CHANGED_FILES', '')
     if not files_str:
-        print("No CHANGED_FILES found, falling back to all markdown files")
-        # Fallback: find all markdown files that don't end with _processed.md
-        import glob
-        all_md_files = glob.glob('**/*.md', recursive=True)
-        return [f for f in all_md_files if not f.endswith('_processed.md')]
+        return []
     return [f.strip() for f in files_str.split('\n') if f.strip()]
 
 def generate_output_filename(input_file):
